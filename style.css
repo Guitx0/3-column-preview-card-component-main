@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+main {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 50px;
+    height: 30px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+p {
+    opacity: 0.75;
+    font-weight: 100;
+    line-height: 23px;
+    font-size: 13px;
+}
+
+.sedans, .suvs, .luxury {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 350px;
+    width: 180px;
+    color: white;
+    padding: 2.5rem
+}
+
+.sedans {
+    background-color: var(--brightOrange);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.suvs {
+    background-color: var(--darkCyan);
+}
+
+.luxury {
+    background-color: var(--veryDarkCyan);
+    border-radius: 0px 5px 5px 0px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 20px; 
+    border: none;
+    margin-top: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.sedans button {
+    color: var(--brightOrange);
+}
+
+.sedans button:hover {
+    color: white;
+    background-color: var(--brightOrange);
+}
+
+.suvs button {
+    color: var(--darkCyan);
+}
+
+.suvs button:hover {
+    color: white;
+    background-color: var(--darkCyan);
+}
+
+.luxury button {
+    color: var(--veryDarkCyan);
+}
+
+.luxury button:hover {
+    color: white;
+    background-color: var(--veryDarkCyan);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
